@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --roxo-botao:   #6D0791;
+    --roxo-letra:   #A00BD4;
+    --branco:       #ffffff;
+    --preto:        #000000;
+    --fundo-main:   #010208;
+    --fundo-dois:   #080C15;
+    --cinza-footer: #212121;
+}

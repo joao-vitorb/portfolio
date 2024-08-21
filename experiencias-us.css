@@ -1,0 +1,354 @@
+/* Estilo do container */
+.container_header {
+    background-image: url('bgimg-second.png'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Cobre toda a área da seção */
+    background-position: center; /* Centraliza a imagem de fundo */
+    width: 100%;
+    height: 100vh; /* Altura total da visualização */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+/* Conteúdo da seção */
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 15px; /* Espaço entre o texto e as linhas */
+}
+
+/* Estilo do título */
+.hero-content h1 {
+    color: white; /* Texto branco */
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Destaque para a palavra 'experiências' */
+.hero-content .highlight {
+    color: var(--roxo-letra); /* Cor roxa */
+}
+
+/* Estilo das linhas ao lado do título */
+.line-left, .line-right {
+    width: 150px;
+    height: 2px;
+    background-color: white; /* Cor das linhas */
+    border: none;
+}
+
+/* Especificidade para cada linha */
+.line-left {
+    margin-right: 10px; /* Espaçamento à direita */
+}
+
+.line-right {
+    margin-left: 10px; /* Espaçamento à esquerda */
+}
+
+
+
+/*SETA*/
+.arrow-down {
+    position: absolute;
+    bottom: 100px; /* Posiciona o ícone a 20px do final da imagem de fundo */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: white;
+    animation: bounce 2s infinite; /* Animação contínua */
+}
+
+/* Definição da animação */
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-50%, 0); /* Posição inicial e final */
+    }
+    50% {
+        transform: translate(-50%, -10px); /* Posição no meio do movimento */
+    }
+}
+
+/*---------------*/
+
+.container_exp {
+    background-color: var(--fundo-main);
+    margin-top: -2rem;
+}
+
+.container_exp h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 5rem;
+    font-size: 2rem;
+    color: var(--branco);
+}
+
+.container_exp .highlight {
+    color: var(--roxo-letra);
+    margin-left: 0.5rem;
+    font-size: 2rem;
+}
+
+/* ---------------- */
+
+.exp_one {
+    background-color: var(--fundo-main);
+    color: var(--branco);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -2rem;
+}
+
+#line-left, #line-right {
+    width: 28%;
+}
+
+/* --------------- */
+
+
+
+.content_experiencia {
+    background-color: var(--fundo-main);
+    display: flex;
+    flex-direction: column;
+    padding: 0 20rem;
+}
+
+.experiencia_titulo {
+    color: var(--branco);
+
+}
+
+.experiencia_imagem  {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.experiencia_imagem img {
+    width: 449px;
+    height: 267px;
+}
+
+.experiencia_txt {
+    color: var(--branco);
+    margin-bottom: 8rem;
+    max-width: 60%;
+}
+
+/* -------------------- */
+.exp_loading {
+    background-color: var(--fundo-main);
+    text-align: center;
+    height: 60vh;
+}
+
+.exp_loading h1 {
+    color: var(--branco);
+}
+
+.exp_loading .highlight {
+    color: var(--roxo-letra);
+}
+
+.spinner-icon {
+    font-size: 4rem;
+    color: white;
+    animation: spin 2s linear infinite;
+    background-color: var(--fundo-main);
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ----------------- */
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 3rem;
+    background-color: var(--cinza-footer);
+    color: var(--branco);
+}
+
+/* ----------------- */
+
+/* Botão e opções */
+.button-container {
+    position: fixed;
+    bottom: 25px;
+    left: 50%; /* Posiciona a esquerda do contêiner ao meio da tela */
+    transform: translateX(-50%); /* Ajusta o alinhamento para centralizar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2; /* Garante que o botão e as opções fiquem acima do fundo */
+}
+
+.plus-button {
+    width: 50px;
+    height: 50px;
+    background-color: var(--branco);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 25px;
+    z-index: 3; /* Mantém o botão acima de tudo */
+}
+
+.plus-button i {
+    color: var(--preto);
+    transition: transform 0.35s ease; /* Suaviza a transição de transformação */
+}
+
+.options {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+    z-index: 3;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.show-options {
+    opacity: 1; /* Torna visível ao mostrar */
+    transform: translateY(0); /* Move para a posição original */
+    display: flex; /* Mostra as opções */
+}
+
+.option {
+    width: 250px;
+    height: 50px;
+    border: 2px solid var(--branco);
+    border-radius: 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.2s ease, border-color 0.35s ease; /* Transições para hover */
+}
+
+.option:hover {
+    background-color: var(--roxo-botao); /* Cor de fundo roxa ao passar o mouse */
+    border-color: var(--roxo-botao); /* Borda roxa ao passar o mouse */
+}
+
+.rotate-icon {
+    transition: transform 0.35s ease; /* Suaviza a transição da rotação */
+    transform: rotate(45deg); /* Rotaciona o ícone em 45 graus */
+}
+
+
+/*----------------*/
+.flag-img {
+    width: 35px;
+    height: 25px;
+    padding: 0.5rem;
+}
+
+#flag-br {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    background-color: rgb(249, 248, 248);
+    transition: 0.3s all;
+}
+
+#flag-us {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: rgb(209, 209, 209);
+}
+
+#flag-br:hover {
+    background-color: #009440;
+    width: 40px;
+    height: 30px;
+}
+
+#options-top {
+    color: var(--branco);
+    font-weight: 900;
+    font-size: 1.8rem;
+    text-wrap: wrap;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: -1.5rem;
+    border: none;
+}
+
+#options-top:hover {
+    background-color: transparent;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Inicia transparente */
+    transition: background 0.5s ease;
+    z-index: 0; /* Ajuste conforme necessário */
+    pointer-events: none; /* Ignora eventos de clique */
+}
+
+.dark-bg::before {
+    background: rgba(0, 0, 0, 0.6); /* Escurece o fundo ao adicionar a classe */
+}
+
+.dark-bg .container_main {
+    opacity: 0.2; /* Escurece o texto e o subtexto */
+    transition: opacity 0.5s ease; /* Suaviza a transição */
+}
+
+/* Estilo da scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--roxo-botao); /* Cor preta */
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--fundo-main); /* Cor de fundo da track */
+}
+
+/* Estilo do placeholder */
+::placeholder {
+    color: var(--roxo-letra);
+    opacity: 1; /* Isso garante que a cor seja totalmente aplicada */
+}

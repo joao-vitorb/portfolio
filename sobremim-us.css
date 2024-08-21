@@ -1,0 +1,424 @@
+.container_header {
+    background-image: url('bgimg-second.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 15px;
+}
+
+.hero-content h1 {
+    color: white;
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero-content .highlight {
+    color: var(--roxo-letra); 
+}
+
+.line-left, .line-right {
+    width: 150px;
+    height: 2px;
+    background-color: white; 
+    border: none;
+}
+
+.line-left {
+    margin-right: 10px; 
+}
+
+.line-right {
+    margin-left: 10px; 
+}
+
+
+
+
+.arrow-down {
+    position: absolute;
+    bottom: 100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: white;
+    animation: bounce 2s infinite; 
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, -10px); 
+    }
+}
+
+
+
+/*SOBRE MIM*/
+.about-container {
+    display: flex;
+    padding: 3rem 20rem;
+    background-color: var(--fundo-main);
+    gap: 2rem;
+}
+
+.about-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rem;
+}
+
+.profile-pic {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.about-right {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.about-title {
+    font-size: 36px;
+    color: white;
+}
+
+.highlight {
+    color: var(--roxo-letra);
+}
+
+.about-line {
+    width: 50px;
+    height: 3px;
+    background-color: var(--branco);
+    border: none;
+    margin: 10px 0;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--branco);
+}
+
+.contact-button {
+    background-color: var(--roxo-botao);
+    color: var(--branco);
+    border: none;
+    padding: 10px 40px;
+    border-radius: 500px;
+    border: 2px var(--roxo-botao) solid;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: transparent;
+    border: 2px var(--branco) solid;
+}
+
+
+
+/*HARD SKILLS*/
+.hard-container {
+    background-color: var(--fundo-dois);
+    margin-top: -2rem;
+    padding: 0 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--branco);
+    align-items: center;
+}
+
+.hard-title {
+    text-wrap: wrap;
+    max-width: 40%;
+    margin-top: 5rem;
+
+}
+
+.hard-text {
+    text-wrap: wrap;
+    max-width: 60%;
+    margin-bottom: 5rem;
+}
+
+.icon-shelf {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon-row i {
+    font-size: 80px;
+    color: var(--branco);
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+
+.icon-row i:hover {
+    color: var(--roxo-letra);
+}
+
+hr {
+    width: 100%;
+    height: 3px;
+    background-color: var(--branco);
+    border: none;
+    margin: 10px auto;
+}
+
+#icon-html {
+    margin-left: 0%;
+}
+
+#icon-css {
+    transform: translateX(40%);
+}
+
+#icon-js {
+    transform: translateX(50%);
+}
+
+
+
+/*SOFT SKILLS*/
+.soft-container {
+    display: flex;
+    flex-direction: row;
+    color: var(--branco);
+    background-color: var(--fundo-main);
+    padding: 1rem 15rem;
+    align-items: center;
+}
+
+.soft-left {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 6rem;
+}
+
+.soft-item {
+    margin-bottom: -2rem;
+}
+
+.soft-item p {
+    transform: translate(15%, -260%);
+    font-weight: 600;
+}
+
+.soft-item img {
+    height: 40px;
+    width: 250px;
+}
+
+.soft-txt {
+    color: var(--branco);
+    text-align: end;
+    margin-left: 10rem;
+    margin-top: -4rem;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 3rem;
+    background-color: var(--cinza-footer);
+    color: var(--branco);
+}
+
+/* Botão e opções */
+.button-container {
+    position: fixed;
+    bottom: 25px;
+    left: 50%; /* Posiciona a esquerda do contêiner ao meio da tela */
+    transform: translateX(-50%); /* Ajusta o alinhamento para centralizar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2; /* Garante que o botão e as opções fiquem acima do fundo */
+}
+
+.plus-button {
+    width: 50px;
+    height: 50px;
+    background-color: var(--branco);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 25px;
+    z-index: 3; /* Mantém o botão acima de tudo */
+}
+
+.plus-button i {
+    color: var(--preto);
+    transition: transform 0.35s ease; /* Suaviza a transição de transformação */
+}
+
+.options {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+    z-index: 3;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.show-options {
+    opacity: 1; /* Torna visível ao mostrar */
+    transform: translateY(0); /* Move para a posição original */
+    display: flex; /* Mostra as opções */
+}
+
+.option {
+    width: 250px;
+    height: 50px;
+    border: 2px solid var(--branco);
+    border-radius: 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.2s ease, border-color 0.35s ease; /* Transições para hover */
+}
+
+.option:hover {
+    background-color: var(--roxo-botao); /* Cor de fundo roxa ao passar o mouse */
+    border-color: var(--roxo-botao); /* Borda roxa ao passar o mouse */
+}
+
+.rotate-icon {
+    transition: transform 0.35s ease; /* Suaviza a transição da rotação */
+    transform: rotate(45deg); /* Rotaciona o ícone em 45 graus */
+}
+
+
+/*----------------*/
+.flag-img {
+    width: 35px;
+    height: 25px;
+    padding: 0.5rem;
+}
+
+#flag-br {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    background-color: rgb(249, 248, 248);
+    transition: 0.3s all;
+}
+
+#flag-us {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: rgb(209, 209, 209);
+}
+
+#flag-br:hover {
+    background-color: #009440;
+    width: 40px;
+    height: 30px;
+}
+
+#options-top:hover {
+    background-color: transparent;
+}
+
+#options-top {
+    color: var(--branco);
+    font-weight: 900;
+    font-size: 1.8rem;
+    text-wrap: wrap;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: -1.5rem;
+    border: none;
+}
+
+#options-top:hover {
+    background-color: transparent;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Inicia transparente */
+    transition: background 0.5s ease;
+    z-index: 0; /* Ajuste conforme necessário */
+    pointer-events: none; /* Ignora eventos de clique */
+}
+
+.dark-bg::before {
+    background: rgba(0, 0, 0, 0.6); /* Escurece o fundo ao adicionar a classe */
+}
+
+.dark-bg .container_main {
+    opacity: 0.2; /* Escurece o texto e o subtexto */
+    transition: opacity 0.5s ease; /* Suaviza a transição */
+}
+
+/* Estilo da scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--roxo-botao); /* Cor preta */
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--fundo-main); /* Cor de fundo da track */
+}
+
+::placeholder {
+    color: var(--roxo-letra);
+    opacity: 1; /* Isso garante que a cor seja totalmente aplicada */
+}
