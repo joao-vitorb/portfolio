@@ -24,7 +24,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Este é o meu portfolio!
 
-- [Acesse o projeto finalizado, online](https://joao-vitorb.github.io/oportunidaderural)
+- [Acesse o projeto finalizado, online](https://joao-vitorb.github.io/portfolio)
 
 ## :memo: Licença
 
