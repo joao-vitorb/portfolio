@@ -397,3 +397,79 @@ body::before {
     color: var(--roxo-letra);
     opacity: 1; /* Isso garante que a cor seja totalmente aplicada */
 }
+
+
+@media (max-width: 1290px) {
+    .hero-content h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .end-btn {
+        margin-top: -0.5rem;
+    }
+
+    .portfolio {
+        padding: 3rem 10rem; /* Reduz o padding em telas menores */
+    }
+
+    .port-line-one {
+        gap: 2rem; /* Reduz o espaçamento entre os itens */
+    }
+
+    .port-item {
+        width: 220px; /* Ajusta a largura dos itens */
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    }
+
+    .port-img {
+        padding: 0; /* Remove o padding na imagem */
+    }
+}
+
+@media (max-width: 942px) {
+    .hero-content h1 {
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .line-right, .line-left {
+        display: none;
+    }
+
+    .portfolio {
+        padding: 2rem; /* Reduz o padding em telas menores */
+    }
+
+    .port-line-one {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        gap: 5rem; /* Ajusta o espaçamento entre os itens */
+    }
+
+    .port-item {
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    }
+
+    .port-img img {
+        height: 100px;
+        width: 200px;
+    }
+
+    .port-icon i {
+        font-size: 1.4rem; /* Reduz o tamanho dos ícones */
+        margin: 0 0.2rem; /* Ajusta o espaçamento entre os ícones */
+    }
+
+    .port-btn {
+        font-size: 14px; /* Reduz o tamanho da fonte do botão */
+        padding: 8px 16px; /* Ajusta o padding do botão */
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -352,3 +352,146 @@ body::before {
     color: var(--roxo-letra);
     opacity: 1; /* Isso garante que a cor seja totalmente aplicada */
 }
+
+@media (max-width: 1290px) {
+    .hero-content h1 {
+        font-size: 60px;
+    }
+
+    .experiencia_imagem  {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .experiencia_imagem img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .experiencia_imagem iframe {
+        width: 400px;
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .content_experiencia {
+        padding: 0 10rem; /* Reduz o padding em telas menores */
+    }
+
+    .experiencia_imagem img {
+        width: 100%; /* Faz com que a imagem se ajuste ao contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .experiencia_imagem iframe {
+        display: none;
+    }
+}
+
+@media (max-width: 942px) {
+    .hero-content h1 {
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #line-title {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .exp_one {
+        flex-direction: column; /* Alinha os itens verticalmente em telas menores */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    #line-left, #line-right {
+        display: none;
+    }
+
+    .content_experiencia {
+        padding: 0 2rem; /* Reduz o padding em telas menores */
+    }
+
+    .experiencia_imagem {
+        flex-direction: column; /* Alinha a imagem e o iframe verticalmente */
+        gap: 1rem; /* Ajusta o espaçamento entre os itens */
+    }
+
+    .experiencia_imagem img {
+        align-items: center;
+        text-align: center;
+        width: 100%; /* Ajusta a largura da imagem */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .experiencia_txt {
+        max-width: 100%; /* Ajusta a largura máxima do texto */
+        margin-bottom: 4rem; /* Ajusta a margem inferior */
+    }
+
+    .exp_loading {
+        height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
+        padding: 2rem; /* Adiciona um padding ao redor do conteúdo */
+    }
+
+    .spinner-icon {
+        font-size: 3rem; /* Reduz o tamanho do ícone de carregamento */
+        margin-top: 2rem; /* Ajusta a margem superior */
+        margin-bottom: 1rem; /* Ajusta a margem inferior */
+    }
+
+    .container_exp h2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .exp_one {
+        flex-direction: column; /* Alinha os itens verticalmente em telas pequenas */
+    }
+
+    #line-left, #line-right {
+        width: 50%; /* Ajusta a largura das linhas */
+    }
+
+    .content_experiencia {
+        padding: 0 1rem; /* Reduz ainda mais o padding em telas pequenas */
+    }
+
+    .experiencia_imagem {
+        flex-direction: column; /* Garante o alinhamento vertical */
+        gap: 0.5rem; /* Ajusta o espaçamento entre os itens */
+    }
+
+    .experiencia_imagem img {
+        width: 100%; /* Ajusta a largura da imagem */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .experiencia_txt {
+        max-width: 100%; /* Ajusta a largura máxima do texto */
+        margin-bottom: 2rem; /* Ajusta a margem inferior */
+    }
+
+    .exp_loading {
+        height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
+        padding: 1rem; /* Adiciona um padding ao redor do conteúdo */
+    }
+
+    .spinner-icon {
+        font-size: 2rem; /* Reduz o tamanho do ícone de carregamento */
+        margin-top: 1rem; /* Ajusta a margem superior */
+        margin-bottom: 0.5rem; /* Ajusta a margem inferior */
+    }
+}

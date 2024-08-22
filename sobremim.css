@@ -137,6 +137,136 @@
     border: 2px var(--branco) solid;
 }
 
+/* Estilos Responsivos para a Seção "Quem sou eu?" */
+
+@media (max-width: 1290px) {
+    .hero-content h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .about-text {
+        font-size: 16px; /* Reduz o tamanho da fonte do texto */
+        margin-right: -10rem;
+    }
+
+    .about-title {
+        font-size: 32px; /* Reduz o tamanho da fonte do título */
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-container {
+        padding: 2rem 10rem; /* Reduz o padding em telas menores */
+        margin-top: -0.1rem;
+        gap: 1.5rem; /* Reduz o espaçamento entre as colunas */
+    }
+
+    .profile-pic {
+        width: 300px; /* Ajusta o tamanho da imagem do perfil */
+        height: 300px;
+    }
+
+    .about-title {
+        font-size: 32px; /* Reduz o tamanho da fonte do título */
+    }
+
+    .about-text {
+        font-size: 16px; /* Reduz o tamanho da fonte do texto */
+        margin-right: 0rem;
+    }
+
+    .contact-button {
+        padding: 8px 30px; /* Ajusta o padding do botão */
+        font-size: 16px; /* Reduz o tamanho da fonte do botão */
+    }
+}
+
+@media (max-width: 942px) {
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .line-right, .line-left {
+        display: none;
+    }
+
+    .about-container {
+        flex-direction: column; /* Alinha as colunas verticalmente */
+        padding: 2rem; /* Reduz o padding em telas menores */
+        gap: 2rem; /* Aumenta o espaçamento entre as seções */
+    }
+
+    .about-left, .about-right {
+        margin-bottom: 0; /* Remove margem inferior nas colunas */
+        padding: 0; /* Remove o padding lateral */
+    }
+
+    .about-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 200px; /* Ajusta o tamanho da imagem do perfil */
+        height: 200px;
+    }
+
+    .about-title {
+        font-size: 22px; /* Reduz o tamanho da fonte do título */
+        text-align: center; /* Centraliza o título */
+    }
+
+    .about-text {
+        font-size: 14px; /* Reduz o tamanho da fonte do texto */
+        text-align: center; /* Centraliza o texto */
+        margin-bottom: 5rem;
+        margin: 0 10rem;
+        margin-bottom: 3rem;
+    }
+
+    .about-line {
+        margin: 10px auto; /* Centraliza a linha */
+    }
+
+    .contact-button {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .about-text {
+        margin: 0 2rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        padding: 1rem; /* Reduz ainda mais o padding em telas pequenas */
+    }
+
+    .profile-pic {
+        width: 200px; /* Ajusta o tamanho da imagem do perfil */
+        height: 200px;
+    }
+
+    .about-title {
+        font-size: 24px; /* Reduz o tamanho da fonte do título */
+    }
+
+    .about-text {
+        font-size: 14px; /* Reduz o tamanho da fonte do texto */
+    }
+
+    .contact-button {
+        padding: 6px 20px; /* Ajusta o padding do botão */
+        font-size: 14px; /* Reduz o tamanho da fonte do botão */
+    }
+}
+
 
 
 /*HARD SKILLS*/
@@ -208,6 +338,92 @@ hr {
     transform: translateX(50%);
 }
 
+/* Estilos Responsivos para a Seção de Habilidades */
+
+@media (max-width: 1200px) {
+    .hard-container {
+        padding: 0 5rem; /* Reduz o padding para telas menores */
+    }
+
+    .hard-title {
+        max-width: 60%; /* Aumenta a largura do título para ocupar mais espaço */
+    }
+
+    .hard-text {
+        max-width: 80%; /* Aumenta a largura do texto */
+    }
+
+    .icon-row i {
+        font-size: 60px; /* Reduz o tamanho dos ícones */
+        margin: 0 15px; /* Ajusta o espaço entre os ícones */
+    }
+}
+
+@media (max-width: 768px) {
+    .hard-container {
+        flex-direction: column; /* Alinha os elementos em coluna */
+        padding: 0 2rem; /* Reduz ainda mais o padding */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .hard-left {
+        margin-bottom: 3rem; /* Adiciona margem abaixo da seção de texto */
+    }
+
+    .hard-text {
+        font-size: 14px;
+        margin: 0 4rem;
+    }
+
+    .hard-title {
+        font-size: 20px;
+    }
+
+    .hard-title, .hard-text {
+        max-width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    .icon-shelf {
+        margin-top: -2rem;
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    .icon-row {
+        flex-wrap: wrap; /* Permite que os ícones quebrem linha */
+        justify-content: center; /* Centraliza os ícones */
+    }
+
+    .icon-row i {
+        font-size: 50px; /* Reduz o tamanho dos ícones ainda mais */
+        margin: 10px; /* Ajusta o espaço entre os ícones */
+    }
+
+    hr {
+        width: 50%; /* Reduz a largura das linhas de separação */
+        margin: 20px auto; /* Ajusta a margem para centralizar */
+    }
+}
+
+@media (max-width: 620px) {
+    .hard-text {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hard-container {
+        padding: 0 1rem; /* Reduz o padding para telas muito pequenas */
+    }
+
+    .icon-row i {
+        font-size: 40px; /* Reduz o tamanho dos ícones */
+        margin: 8px; /* Ajusta o espaço entre os ícones */
+    }
+
+    hr {
+        width: 60%; /* Reduz ainda mais a largura das linhas de separação */
+    }
+}
 
 
 /*SOFT SKILLS*/
@@ -248,6 +464,72 @@ hr {
     margin-top: -4rem;
 }
 
+@media (max-width: 1440px) {
+    .soft-container {
+        margin-top: -0.1rem;
+    }
+
+    .soft-txt {
+        margin-top: 2rem;
+    }
+
+    .soft-txt p {
+        margin-left: -5rem;
+    }
+}
+
+@media (max-width: 1327px) { 
+    .soft-txt {
+        margin-right: -10rem;
+    }
+
+    .soft-left {
+        margin-left: -9rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .soft-container {
+        flex-direction: column;
+        padding: 1rem 5rem;
+    }
+
+    .soft-left {
+        flex-direction: column;
+        margin-top: 5rem;
+        align-items: center;
+    }
+
+    .soft-coluna {
+        align-items: center;
+        margin-top: -3rem;
+        margin-left: 65%;
+    }
+
+    .soft-txt {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .soft-txt h1 {
+        font-size: 22px;
+        margin-left: -320%;
+    }
+
+    .soft-txt p {
+        display: none;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .soft-txt h1 {
+        font-size: 20px;
+        margin-right: 0.3rem;
+    }
+}
+
+
 .footer {
     display: flex;
     align-items: center;
@@ -257,6 +539,7 @@ hr {
     background-color: var(--cinza-footer);
     color: var(--branco);
 }
+
 
 /* Botão e opções */
 .button-container {
@@ -416,4 +699,11 @@ body::before {
 ::placeholder {
     color: var(--roxo-letra);
     opacity: 1; /* Isso garante que a cor seja totalmente aplicada */
+}
+
+@media (max-width: 640px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
