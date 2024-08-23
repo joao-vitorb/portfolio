@@ -369,7 +369,7 @@ body::before {
     height: 100%;
     background: rgba(0, 0, 0, 0); /* Inicia transparente */
     transition: background 0.5s ease;
-    z-index: 0; /* Ajuste conforme necessário */
+    z-index: 2; /* Ajuste conforme necessário */
     pointer-events: none; /* Ignora eventos de clique */
 }
 
