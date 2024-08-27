@@ -135,7 +135,6 @@
     color: var(--roxo-letra);
 }
 
-/* Estilos Responsivos para a Seção "Quem sou eu?" */
 
 @media (max-width: 1290px) {
     .hero-content h1 {
@@ -145,33 +144,33 @@
 
 @media (max-width: 1350px) {
     .about-text {
-        font-size: 16px; /* Reduz o tamanho da fonte do texto */
+        font-size: 16px;
         margin-right: -10rem;
     }
 
     .about-title {
-        font-size: 32px; /* Reduz o tamanho da fonte do título */
+        font-size: 32px;
     }
 }
 
 @media (max-width: 1200px) {
     .about-container {
-        padding: 2rem 10rem; /* Reduz o padding em telas menores */
+        padding: 2rem 10rem;
         margin-top: -0.1rem;
-        gap: 1.5rem; /* Reduz o espaçamento entre as colunas */
+        gap: 1.5rem;
     }
 
     .profile-pic {
-        width: 300px; /* Ajusta o tamanho da imagem do perfil */
+        width: 300px; 
         height: 300px;
     }
 
     .about-title {
-        font-size: 32px; /* Reduz o tamanho da fonte do título */
+        font-size: 32px; 
     }
 
     .about-text {
-        font-size: 16px; /* Reduz o tamanho da fonte do texto */
+        font-size: 16px;
         margin-right: 0rem;
     }
 }
@@ -186,14 +185,14 @@
     }
 
     .about-container {
-        flex-direction: column; /* Alinha as colunas verticalmente */
-        padding: 2rem; /* Reduz o padding em telas menores */
-        gap: 2rem; /* Aumenta o espaçamento entre as seções */
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
     }
 
     .about-left, .about-right {
-        margin-bottom: 0; /* Remove margem inferior nas colunas */
-        padding: 0; /* Remove o padding lateral */
+        margin-bottom: 0;
+        padding: 0;
     }
 
     .about-left {
@@ -203,25 +202,25 @@
     }
 
     .profile-pic {
-        width: 200px; /* Ajusta o tamanho da imagem do perfil */
+        width: 200px;
         height: 200px;
     }
 
     .about-title {
-        font-size: 22px; /* Reduz o tamanho da fonte do título */
-        text-align: center; /* Centraliza o título */
+        font-size: 22px;
+        text-align: center;
     }
 
     .about-text {
-        font-size: 14px; /* Reduz o tamanho da fonte do texto */
-        text-align: center; /* Centraliza o texto */
+        font-size: 14px;
+        text-align: center; 
         margin-bottom: 5rem;
         margin: 0 10rem;
         margin-bottom: 3rem;
     }
 
     .about-line {
-        margin: 10px auto; /* Centraliza a linha */
+        margin: 10px auto;
     }
 
     .about-icons {
@@ -241,20 +240,20 @@
 
 @media (max-width: 480px) {
     .about-container {
-        padding: 1rem; /* Reduz ainda mais o padding em telas pequenas */
+        padding: 1rem;
     }
 
     .profile-pic {
-        width: 200px; /* Ajusta o tamanho da imagem do perfil */
+        width: 200px;
         height: 200px;
     }
 
     .about-title {
-        font-size: 24px; /* Reduz o tamanho da fonte do título */
+        font-size: 24px;
     }
 
     .about-text {
-        font-size: 14px; /* Reduz o tamanho da fonte do texto */
+        font-size: 14px;
     }
 }
 
@@ -329,36 +328,35 @@ hr {
     transform: translateX(50%);
 }
 
-/* Estilos Responsivos para a Seção de Habilidades */
 
 @media (max-width: 1200px) {
     .hard-container {
-        padding: 0 5rem; /* Reduz o padding para telas menores */
+        padding: 0 5rem;
     }
 
     .hard-title {
-        max-width: 60%; /* Aumenta a largura do título para ocupar mais espaço */
+        max-width: 60%;
     }
 
     .hard-text {
-        max-width: 80%; /* Aumenta a largura do texto */
+        max-width: 80%;
     }
 
     .icon-row i {
-        font-size: 60px; /* Reduz o tamanho dos ícones */
-        margin: 0 15px; /* Ajusta o espaço entre os ícones */
+        font-size: 60px;
+        margin: 0 15px; 
     }
 }
 
 @media (max-width: 768px) {
     .hard-container {
-        flex-direction: column; /* Alinha os elementos em coluna */
-        padding: 0 2rem; /* Reduz ainda mais o padding */
-        text-align: center; /* Centraliza o texto */
+        flex-direction: column;
+        padding: 0 2rem;
+        text-align: center; 
     }
 
     .hard-left {
-        margin-bottom: 3rem; /* Adiciona margem abaixo da seção de texto */
+        margin-bottom: 3rem;
     }
 
     .hard-text {
@@ -371,27 +369,27 @@ hr {
     }
 
     .hard-title, .hard-text {
-        max-width: 100%; /* Ocupa toda a largura disponível */
+        max-width: 100%; 
     }
 
     .icon-shelf {
         margin-top: -2rem;
-        width: 100%; /* Ocupa toda a largura disponível */
+        width: 100%;
     }
 
     .icon-row {
-        flex-wrap: wrap; /* Permite que os ícones quebrem linha */
-        justify-content: center; /* Centraliza os ícones */
+        flex-wrap: wrap; 
+        justify-content: center; 
     }
 
     .icon-row i {
-        font-size: 50px; /* Reduz o tamanho dos ícones ainda mais */
-        margin: 10px; /* Ajusta o espaço entre os ícones */
+        font-size: 50px;
+        margin: 10px;
     }
 
     hr {
-        width: 50%; /* Reduz a largura das linhas de separação */
-        margin: 20px auto; /* Ajusta a margem para centralizar */
+        width: 50%; 
+        margin: 20px auto; 
     }
 }
 
@@ -403,21 +401,19 @@ hr {
 
 @media (max-width: 480px) {
     .hard-container {
-        padding: 0 1rem; /* Reduz o padding para telas muito pequenas */
+        padding: 0 1rem; 
     }
 
     .icon-row i {
-        font-size: 40px; /* Reduz o tamanho dos ícones */
-        margin: 8px; /* Ajusta o espaço entre os ícones */
+        font-size: 40px; 
+        margin: 8px;
     }
 
     hr {
-        width: 60%; /* Reduz ainda mais a largura das linhas de separação */
+        width: 60%;
     }
 }
 
-
-/*SOFT SKILLS*/
 .soft-container {
     display: flex;
     flex-direction: row;
@@ -531,17 +527,15 @@ hr {
     color: var(--branco);
 }
 
-
-/* Botão e opções */
 .button-container {
     position: fixed;
     bottom: 25px;
-    left: 50%; /* Posiciona a esquerda do contêiner ao meio da tela */
-    transform: translateX(-50%); /* Ajusta o alinhamento para centralizar */
+    left: 50%; 
+    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 2; /* Garante que o botão e as opções fiquem acima do fundo */
+    z-index: 2; 
 }
 
 .plus-button {
@@ -555,16 +549,16 @@ hr {
     align-items: center;
     cursor: pointer;
     font-size: 25px;
-    z-index: 3; /* Mantém o botão acima de tudo */
+    z-index: 3;
 }
 
 .plus-button i {
     color: var(--preto);
-    transition: transform 0.35s ease; /* Suaviza a transição de transformação */
+    transition: transform 0.35s ease;
 }
 
 .options {
-    display: none; /* Inicialmente oculto */
+    display: none;
     position: absolute;
     bottom: 100px;
     flex-direction: column;
@@ -577,9 +571,9 @@ hr {
 }
 
 .show-options {
-    opacity: 1; /* Torna visível ao mostrar */
-    transform: translateY(0); /* Move para a posição original */
-    display: flex; /* Mostra as opções */
+    opacity: 1;
+    transform: translateY(0);
+    display: flex;
 }
 
 .option {
@@ -595,26 +589,24 @@ hr {
     cursor: pointer;
     font-weight: 500;
     font-size: 1rem;
-    transition: background-color 0.2s ease, border-color 0.35s ease; /* Transições para hover */
+    transition: background-color 0.2s ease, border-color 0.35s ease;
 }
 
 .option:hover {
-    background-color: var(--roxo-botao); /* Cor de fundo roxa ao passar o mouse */
-    border-color: var(--roxo-botao); /* Borda roxa ao passar o mouse */
+    background-color: var(--roxo-botao);
+    border-color: var(--roxo-botao);
 }
 
 .rotate-icon {
-    transition: transform 0.35s ease; /* Suaviza a transição da rotação */
-    transform: rotate(45deg); /* Rotaciona o ícone em 45 graus */
+    transition: transform 0.35s ease;
+    transform: rotate(45deg);
 }
 
-
-/*----------------*/
 .flag-img {
     width: 35px;
     height: 25px;
     padding: 0.5rem;
-    border: none; /* Remove a borda das bandeiras */
+    border: none;
 }
 
 #flag-br {
@@ -658,38 +650,37 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0); /* Inicia transparente */
+    background: rgba(0, 0, 0, 0);
     transition: background 0.5s ease;
-    z-index: 2; /* Ajuste conforme necessário */
-    pointer-events: none; /* Ignora eventos de clique */
+    z-index: 2;
+    pointer-events: none;
 }
 
 .dark-bg::before {
-    background: rgba(0, 0, 0, 0.6); /* Escurece o fundo ao adicionar a classe */
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .dark-bg .container_main {
-    opacity: 0.2; /* Escurece o texto e o subtexto */
-    transition: opacity 0.5s ease; /* Suaviza a transição */
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
 }
 
-/* Estilo da scrollbar */
 ::-webkit-scrollbar {
     width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--roxo-botao); /* Cor preta */
+    background-color: var(--roxo-botao);
     border-radius: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--fundo-main); /* Cor de fundo da track */
+    background-color: var(--fundo-main);
 }
 
 ::placeholder {
     color: var(--roxo-letra);
-    opacity: 1; /* Isso garante que a cor seja totalmente aplicada */
+    opacity: 1;
 }
 
 @media (max-width: 640px) {

@@ -27,35 +27,32 @@
 }
 
 .hero-content .highlight {
-    color: var(--roxo-letra); 
+    color: var(--roxo-letra);
 }
 
 .line-left, .line-right {
     width: 150px;
     height: 2px;
-    background-color: white; 
+    background-color: white;
     border: none;
 }
 
 .line-left {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .line-right {
-    margin-left: 10px; 
+    margin-left: 10px;
 }
-
-
-
 
 .arrow-down {
     position: absolute;
-    bottom: 100px; 
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 1rem;
     color: white;
-    animation: bounce 2s infinite; 
+    animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
@@ -63,11 +60,11 @@
         transform: translate(-50%, 0);
     }
     50% {
-        transform: translate(-50%, -10px); 
+        transform: translate(-50%, -10px);
     }
 }
 
-.container_proj  {
+.container_proj {
     background-color: var(--fundo-main);
     margin-top: -2rem;
 }
@@ -84,7 +81,7 @@
 }
 
 .highlight {
-    color: var(--roxo-letra); /* Cor roxa */
+    color: var(--roxo-letra);
     margin-left: 0.5rem;
 }
 
@@ -94,15 +91,15 @@
     background-color: var(--fundo-main);
     color: var(--branco);
     padding: 5rem 15rem;
-    align-items: center; /* Centraliza a linha de itens horizontalmente */
+    align-items: center;
     margin-top: -2rem;
 }
 
 .port-line-one {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Centraliza os itens na linha */
-    gap: 4rem; /* Espaço entre os itens */
+    justify-content: center;
+    gap: 4rem;
     margin-top: 5rem;
 }
 
@@ -110,24 +107,24 @@
     display: flex;
     flex-direction: column;
     background-color: #131417;
-    justify-content: space-between; /* Distribui o conteúdo verticalmente */
+    justify-content: space-between;
     border-radius: 1.5rem;
     padding: 0 1rem 1rem;
-    width: 250px; /* Largura fixa para os itens */
-    height: 400px; /* Altura fixa para os itens */
-    margin: 0; /* Remove margens externas */
+    width: 250px;
+    height: 400px;
+    margin: 0;
 }
 
 .port-img {
     background-color: #2E2E2E;
     border-radius: 1.5rem;
     padding: 0 1rem 0rem;
-    text-align: center; /* Centraliza a imagem dentro do container */
+    text-align: center;
 }
 
 .port-item img {
-    width: 100%; /* Ajusta a largura da imagem para preencher o container */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 100%;
+    height: auto;
     border-radius: 1rem;
     transform: translateY(-25%);
 }
@@ -151,22 +148,22 @@
 }
 
 .port-btn {
-    background-color: var(--roxo-letra); /* Cor roxa */
-    color: white; /* Texto branco */
+    background-color: var(--roxo-letra);
+    color: white;
     border: none;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 0.5rem auto; /* Centraliza o botão */
+    margin: 0.5rem auto;
     cursor: pointer;
-    border-radius: 50px; /* Borda arredondada */
-    transition: background-color 0.3s ease; /* Transição suave para a cor do fundo */
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
 }
 
 .port-btn:hover {
-    background-color: var(--roxo-botao); /* Cor roxa mais escura no hover */
+    background-color: var(--roxo-botao);
 }
 
 #icon-html {
@@ -193,7 +190,6 @@
     color: yellow;
 }
 
-
 .end-btn {
     background-color: var(--fundo-main);
     display: flex;
@@ -202,8 +198,8 @@
 }
 
 .port-btn-end {
-    background-color: var(--roxo-letra); /* Cor roxa */
-    color: white; /* Texto branco */
+    background-color: var(--roxo-letra);
+    color: white;
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -217,8 +213,8 @@
 }
 
 .port-btn-end:hover {
-    background-color: var(--roxo-botao); /* Cor roxa */
-    color: white; /* Texto branco */
+    background-color: var(--roxo-botao);
+    color: white;
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -240,16 +236,15 @@
     color: var(--branco);
 }
 
-/* Botão e opções */
 .button-container {
     position: fixed;
     bottom: 25px;
-    left: 50%; /* Posiciona a esquerda do contêiner ao meio da tela */
-    transform: translateX(-50%); /* Ajusta o alinhamento para centralizar */
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 2; /* Garante que o botão e as opções fiquem acima do fundo */
+    z-index: 2;
 }
 
 .plus-button {
@@ -267,11 +262,11 @@
 
 .plus-button i {
     color: var(--preto);
-    transition: transform 0.35s ease; /* Suaviza a transição de transformação */
+    transition: transform 0.35s ease;
 }
 
 .options {
-    display: none; /* Inicialmente oculto */
+    display: none;
     position: absolute;
     bottom: 100px;
     flex-direction: column;
@@ -283,9 +278,9 @@
 }
 
 .show-options {
-    opacity: 1; /* Torna visível ao mostrar */
-    transform: translateY(0); /* Move para a posição original */
-    display: flex; /* Mostra as opções */
+    opacity: 1;
+    transform: translateY(0);
+    display: flex;
 }
 
 .option {
@@ -301,26 +296,24 @@
     cursor: pointer;
     font-weight: 500;
     font-size: 1rem;
-    transition: background-color 0.2s ease, border-color 0.35s ease; /* Transições para hover */
+    transition: background-color 0.2s ease, border-color 0.35s ease;
 }
 
 .option:hover {
-    background-color: var(--roxo-botao); /* Cor de fundo roxa ao passar o mouse */
-    border-color: var(--roxo-botao); /* Borda roxa ao passar o mouse */
+    background-color: var(--roxo-botao);
+    border-color: var(--roxo-botao);
 }
 
 .rotate-icon {
-    transition: transform 0.35s ease; /* Suaviza a transição da rotação */
-    transform: rotate(45deg); /* Rotaciona o ícone em 45 graus */
+    transition: transform 0.35s ease;
+    transform: rotate(45deg);
 }
 
-
-/*----------------*/
 .flag-img {
     width: 35px;
     height: 25px;
     padding: 0.5rem;
-    border: none; /* Remove a borda das bandeiras */
+    border: none;
 }
 
 #flag-br {
@@ -364,40 +357,38 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0); /* Inicia transparente */
+    background: rgba(0, 0, 0, 0);
     transition: background 0.5s ease;
-    z-index: 2; /* Ajuste conforme necessário */
-    pointer-events: none; /* Ignora eventos de clique */
+    z-index: 2;
+    pointer-events: none;
 }
 
 .dark-bg::before {
-    background: rgba(0, 0, 0, 0.6); /* Escurece o fundo ao adicionar a classe */
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .dark-bg .container_main {
-    opacity: 0.2; /* Escurece o texto e o subtexto */
-    transition: opacity 0.5s ease; /* Suaviza a transição */
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
 }
 
-/* Estilo da scrollbar */
 ::-webkit-scrollbar {
     width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--roxo-botao); /* Cor preta */
+    background-color: var(--roxo-botao);
     border-radius: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--fundo-main); /* Cor de fundo da track */
+    background-color: var(--fundo-main);
 }
 
 ::placeholder {
     color: var(--roxo-letra);
-    opacity: 1; /* Isso garante que a cor seja totalmente aplicada */
+    opacity: 1;
 }
-
 
 @media (max-width: 1290px) {
     .hero-content h1 {
@@ -406,26 +397,25 @@ body::before {
 }
 
 @media (max-width: 1200px) {
-
     .end-btn {
         margin-top: -0.5rem;
     }
 
     .portfolio {
-        padding: 3rem 10rem; /* Reduz o padding em telas menores */
+        padding: 3rem 10rem;
     }
 
     .port-line-one {
-        gap: 2rem; /* Reduz o espaçamento entre os itens */
+        gap: 2rem;
     }
 
     .port-item {
-        width: 220px; /* Ajusta a largura dos itens */
-        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        width: 220px;
+        height: auto;
     }
 
     .port-img {
-        padding: 0; /* Remove o padding na imagem */
+        padding: 0;
     }
 }
 
@@ -441,16 +431,16 @@ body::before {
     }
 
     .portfolio {
-        padding: 2rem; /* Reduz o padding em telas menores */
+        padding: 2rem;
     }
 
     .port-line-one {
-        flex-direction: column; /* Alinha os itens verticalmente */
-        gap: 5rem; /* Ajusta o espaçamento entre os itens */
+        flex-direction: column;
+        gap: 5rem;
     }
 
     .port-item {
-        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        height: auto;
     }
 
     .port-img img {
@@ -459,13 +449,13 @@ body::before {
     }
 
     .port-icon i {
-        font-size: 1.4rem; /* Reduz o tamanho dos ícones */
-        margin: 0 0.2rem; /* Ajusta o espaçamento entre os ícones */
+        font-size: 1.4rem;
+        margin: 0 0.2rem;
     }
 
     .port-btn {
-        font-size: 14px; /* Reduz o tamanho da fonte do botão */
-        padding: 8px 16px; /* Ajusta o padding do botão */
+        font-size: 14px;
+        padding: 8px 16px;
     }
 
     .footer {

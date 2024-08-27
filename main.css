@@ -1,4 +1,3 @@
-/* Pseudo-elemento para escurecer o fundo */
 body::before {
     content: '';
     position: fixed;
@@ -6,9 +5,9 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0); /* Inicia transparente */
+    background: rgba(0, 0, 0, 0);
     transition: background 0.5s ease;
-    z-index: 1; /* Fica atrás do conteúdo */
+    z-index: 1;
 }
 
 .body_main {
@@ -22,15 +21,13 @@ body::before {
 }
 
 .dark-bg::before {
-    background: rgba(0, 0, 0, 0.6); /* Escurece o fundo ao adicionar a classe */
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .dark-bg .container_main {
-    opacity: 0.2; /* Escurece o texto e o subtexto */
-    transition: opacity 0.5s ease; /* Suaviza a transição */
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
 }
-
-/* ------ */
 
 .container_main {
     text-align: center;
@@ -57,7 +54,7 @@ body::before {
 }
 
 .highlight {
-    color: var(--roxo-letra); /* Cor roxa */
+    color: var(--roxo-letra);
 }
 
 .line-left, .line-right {
@@ -67,16 +64,14 @@ body::before {
     border: none;
     margin: 0 10px;
 }
-   
 
-/* Botão e opções */
 .button-container {
     position: fixed;
     bottom: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 2; /* Garante que o botão e as opções fiquem acima do fundo */
+    z-index: 2;
 }
 
 .plus-button {
@@ -90,16 +85,16 @@ body::before {
     align-items: center;
     cursor: pointer;
     font-size: 25px;
-    z-index: 3; /* Mantém o botão acima de tudo */
+    z-index: 3;
 }
 
 .plus-button i {
     color: var(--preto);
-    transition: transform 0.35s ease; /* Suaviza a transição de transformação */
+    transition: transform 0.35s ease;
 }
 
 .options {
-    display: none; /* Inicialmente oculto */
+    display: none;
     position: absolute;
     bottom: 100px;
     flex-direction: column;
@@ -112,9 +107,9 @@ body::before {
 }
 
 .show-options {
-    opacity: 1; /* Torna visível ao mostrar */
-    transform: translateY(0); /* Move para a posição original */
-    display: flex; /* Mostra as opções */
+    opacity: 1;
+    transform: translateY(0);
+    display: flex;
 }
 
 .option {
@@ -130,26 +125,24 @@ body::before {
     cursor: pointer;
     font-weight: 500;
     font-size: 1rem;
-    transition: background-color 0.2s ease, border-color 0.35s ease; /* Transições para hover */
+    transition: background-color 0.2s ease, border-color 0.35s ease;
 }
 
 .option:hover {
-    background-color: var(--roxo-botao); /* Cor de fundo roxa ao passar o mouse */
-    border-color: var(--roxo-botao); /* Borda roxa ao passar o mouse */
+    background-color: var(--roxo-botao);
+    border-color: var(--roxo-botao);
 }
 
 .rotate-icon {
-    transition: transform 0.35s ease; /* Suaviza a transição da rotação */
-    transform: rotate(45deg); /* Rotaciona o ícone em 45 graus */
+    transition: transform 0.35s ease;
+    transform: rotate(45deg);
 }
 
-
-/*----------------*/
 .flag-img {
     width: 35px;
     height: 25px;
     padding: 0.5rem;
-    border: none; /* Remove a borda das bandeiras */
+    border: none;
 }
 
 #flag-br {
@@ -185,7 +178,6 @@ body::before {
 #options-top:hover {
     background-color: transparent;
 }
-
 
 @media (max-width: 1290px) {
     .text_main {

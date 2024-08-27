@@ -1,10 +1,9 @@
-/* Estilo do container */
 .container_header {
-    background-image: url('bgimg-second.png'); /* Caminho para a imagem de fundo */
-    background-size: cover; /* Cobre toda a área da seção */
-    background-position: center; /* Centraliza a imagem de fundo */
+    background-image: url('bgimg-second.png');
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 100vh; /* Altura total da visualização */
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,84 +18,73 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0); /* Inicia transparente */
+    background: rgba(0, 0, 0, 0);
     transition: background 0.5s ease;
-    z-index: 2; /* Ajuste conforme necessário */
-    pointer-events: none; /* Ignora eventos de clique */
+    z-index: 2;
+    pointer-events: none;
 }
 
 .dark-bg::before {
-    background: rgba(0, 0, 0, 0.6); /* Escurece o fundo ao adicionar a classe */
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .dark-bg .container_main {
-    opacity: 0.2; /* Escurece o texto e o subtexto */
-    transition: opacity 0.5s ease; /* Suaviza a transição */
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
 }
 
-/* Conteúdo da seção */
 .hero-content {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    gap: 15px; /* Espaço entre o texto e as linhas */
+    gap: 15px;
 }
 
-/* Estilo do título */
 .hero-content h1 {
-    color: white; /* Texto branco */
+    color: white;
     font-size: 5rem;
     font-weight: bold;
     margin: 0;
 }
 
-/* Destaque para a palavra 'experiências' */
 .hero-content .highlight {
-    color: var(--roxo-letra); /* Cor roxa */
+    color: var(--roxo-letra);
 }
 
-/* Estilo das linhas ao lado do título */
 .line-left, .line-right {
     width: 150px;
     height: 2px;
-    background-color: white; /* Cor das linhas */
+    background-color: white;
     border: none;
 }
 
-/* Especificidade para cada linha */
 .line-left {
-    margin-right: 10px; /* Espaçamento à direita */
+    margin-right: 10px;
 }
 
 .line-right {
-    margin-left: 10px; /* Espaçamento à esquerda */
+    margin-left: 10px;
 }
 
-
-
-/*SETA*/
 .arrow-down {
     position: absolute;
-    bottom: 100px; /* Posiciona o ícone a 20px do final da imagem de fundo */
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 1rem;
     color: white;
-    animation: bounce 2s infinite; /* Animação contínua */
+    animation: bounce 2s infinite;
 }
 
-/* Definição da animação */
 @keyframes bounce {
     0%, 100% {
-        transform: translate(-50%, 0); /* Posição inicial e final */
+        transform: translate(-50%, 0);
     }
     50% {
-        transform: translate(-50%, -10px); /* Posição no meio do movimento */
+        transform: translate(-50%, -10px);
     }
 }
-
-/*---------------*/
 
 .container_exp {
     background-color: var(--fundo-main);
@@ -120,8 +108,6 @@ body::before {
     font-size: 2rem;
 }
 
-/* ---------------- */
-
 .exp_one {
     background-color: var(--fundo-main);
     color: var(--branco);
@@ -136,10 +122,6 @@ body::before {
     width: 28%;
 }
 
-/* --------------- */
-
-
-
 .content_experiencia {
     background-color: var(--fundo-main);
     display: flex;
@@ -149,7 +131,6 @@ body::before {
 
 .experiencia_titulo {
     color: var(--branco);
-
 }
 
 .experiencia_imagem  {
@@ -169,7 +150,6 @@ body::before {
     max-width: 60%;
 }
 
-/* -------------------- */
 .exp_loading {
     background-color: var(--fundo-main);
     text-align: center;
@@ -202,8 +182,6 @@ body::before {
     }
 }
 
-/* ----------------- */
-
 .footer {
     display: flex;
     align-items: center;
@@ -214,18 +192,15 @@ body::before {
     color: var(--branco);
 }
 
-/* ----------------- */
-
-/* Botão e opções */
 .button-container {
     position: fixed;
     bottom: 25px;
-    left: 50%; /* Posiciona a esquerda do contêiner ao meio da tela */
-    transform: translateX(-50%); /* Ajusta o alinhamento para centralizar */
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 2; /* Garante que o botão e as opções fiquem acima do fundo */
+    z-index: 2;
 }
 
 .plus-button {
@@ -239,16 +214,16 @@ body::before {
     align-items: center;
     cursor: pointer;
     font-size: 25px;
-    z-index: 3; /* Mantém o botão acima de tudo */
+    z-index: 3;
 }
 
 .plus-button i {
     color: var(--preto);
-    transition: transform 0.35s ease; /* Suaviza a transição de transformação */
+    transition: transform 0.35s ease;
 }
 
 .options {
-    display: none; /* Inicialmente oculto */
+    display: none;
     position: absolute;
     bottom: 100px;
     flex-direction: column;
@@ -260,9 +235,9 @@ body::before {
     transition: opacity 0.35s ease, transform 0.35s ease;
 }
 .show-options {
-    opacity: 1; /* Torna visível ao mostrar */
-    transform: translateY(0); /* Move para a posição original */
-    display: flex; /* Mostra as opções */
+    opacity: 1;
+    transform: translateY(0);
+    display: flex;
 }
 
 .option {
@@ -278,27 +253,24 @@ body::before {
     cursor: pointer;
     font-weight: 500;
     font-size: 1rem;
-    transition: background-color 0.2s ease, border-color 0.35s ease; /* Transições para hover */
+    transition: background-color 0.2s ease, border-color 0.35s ease;
 }
 
 .option:hover {
-    background-color: var(--roxo-botao); /* Cor de fundo roxa ao passar o mouse */
-    border-color: var(--roxo-botao); /* Borda roxa ao passar o mouse */
+    background-color: var(--roxo-botao);
+    border-color: var(--roxo-botao);
 }
 
 .rotate-icon {
-    transition: transform 0.35s ease; /* Suaviza a transição da rotação */
-    transform: rotate(45deg); /* Rotaciona o ícone em 45 graus */
+    transition: transform 0.35s ease;
+    transform: rotate(45deg);
 }
-
-
-/*----------------*/
 
 .flag-img {
     width: 35px;
     height: 25px;
     padding: 0.5rem;
-    border: none; /* Remove a borda das bandeiras */
+    border: none;
 }
 
 #flag-br {
@@ -335,8 +307,6 @@ body::before {
     background-color: transparent;
 }
 
-/* Media Queries para tornar o layout responsivo */
-
 @media (max-width: 1290px) {
     .hero-content h1 {
         font-size: 60px;
@@ -357,17 +327,16 @@ body::before {
         width: 400px;
         height: 300px;
     }
-
 }
 
 @media (max-width: 1200px) {
     .content_experiencia {
-        padding: 0 10rem; /* Reduz o padding em telas menores */
+        padding: 0 10rem;
     }
 
     .experiencia_imagem img {
-        width: 100%; /* Faz com que a imagem se ajuste ao contêiner */
-        height: auto; /* Mantém a proporção da imagem */
+        width: 100%;
+        height: auto;
     }
 
     .experiencia_imagem iframe {
@@ -389,8 +358,8 @@ body::before {
 
 @media (max-width: 768px) {
     .exp_one {
-        flex-direction: column; /* Alinha os itens verticalmente em telas menores */
-        text-align: center; /* Centraliza o texto */
+        flex-direction: column;
+        text-align: center;
     }
 
     #line-left, #line-right {
@@ -398,35 +367,35 @@ body::before {
     }
 
     .content_experiencia {
-        padding: 0 2rem; /* Reduz o padding em telas menores */
+        padding: 0 2rem;
     }
 
     .experiencia_imagem {
-        flex-direction: column; /* Alinha a imagem e o iframe verticalmente */
-        gap: 1rem; /* Ajusta o espaçamento entre os itens */
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .experiencia_imagem img {
         align-items: center;
         text-align: center;
-        width: 100%; /* Ajusta a largura da imagem */
-        height: auto; /* Mantém a proporção da imagem */
+        width: 100%;
+        height: auto;
     }
 
     .experiencia_txt {
-        max-width: 100%; /* Ajusta a largura máxima do texto */
-        margin-bottom: 4rem; /* Ajusta a margem inferior */
+        max-width: 100%;
+        margin-bottom: 4rem;
     }
 
     .exp_loading {
-        height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
-        padding: 2rem; /* Adiciona um padding ao redor do conteúdo */
+        height: auto;
+        padding: 2rem;
     }
 
     .spinner-icon {
-        font-size: 3rem; /* Reduz o tamanho do ícone de carregamento */
-        margin-top: 2rem; /* Ajusta a margem superior */
-        margin-bottom: 1rem; /* Ajusta a margem inferior */
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
 
     .container_exp h2{
@@ -442,40 +411,40 @@ body::before {
 
 @media (max-width: 480px) {
     .exp_one {
-        flex-direction: column; /* Alinha os itens verticalmente em telas pequenas */
+        flex-direction: column;
     }
 
     #line-left, #line-right {
-        width: 50%; /* Ajusta a largura das linhas */
+        width: 50%;
     }
 
     .content_experiencia {
-        padding: 0 1rem; /* Reduz ainda mais o padding em telas pequenas */
+        padding: 0 1rem;
     }
 
     .experiencia_imagem {
-        flex-direction: column; /* Garante o alinhamento vertical */
-        gap: 0.5rem; /* Ajusta o espaçamento entre os itens */
+        flex-direction: column;
+        gap: 0.5rem;
     }
 
     .experiencia_imagem img {
-        width: 100%; /* Ajusta a largura da imagem */
-        height: auto; /* Mantém a proporção da imagem */
+        width: 100%;
+        height: auto;
     }
 
     .experiencia_txt {
-        max-width: 100%; /* Ajusta a largura máxima do texto */
-        margin-bottom: 2rem; /* Ajusta a margem inferior */
+        max-width: 100%;
+        margin-bottom: 2rem;
     }
 
     .exp_loading {
-        height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
-        padding: 1rem; /* Adiciona um padding ao redor do conteúdo */
+        height: auto;
+        padding: 1rem;
     }
 
     .spinner-icon {
-        font-size: 2rem; /* Reduz o tamanho do ícone de carregamento */
-        margin-top: 1rem; /* Ajusta a margem superior */
-        margin-bottom: 0.5rem; /* Ajusta a margem inferior */
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
     }
 }
