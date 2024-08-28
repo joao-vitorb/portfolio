@@ -60,11 +60,36 @@ body::before {
     margin: 0 10px;
 }
 
+@keyframes blink {
+    0% { border-right-color: transparent; }
+    50% { border-right-color: var(--roxo-letra); }
+    100% { border-right-color: transparent; }
+}
+
+@keyframes solid {
+    0% { border-right-color: var(--roxo-letra); }
+}
+
 .highlight {
     color: var(--roxo-letra);
+    font-weight: bold;
+    border-right: 5px solid var(--roxo-letra);
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink 1s step-end infinite;
+}
+
+.blinking {
+    animation: blink 1s step-end infinite;
+}
+
+.solid {
+    animation: solid 1s step-end;
 }
 
 .line-left, .line-right {
+    display: inline-block;
     width: 150px;
     height: 2px;
     background-color: var(--branco);
