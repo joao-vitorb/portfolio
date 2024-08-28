@@ -8,6 +8,7 @@ body::before {
     background: rgba(0, 0, 0, 0);
     transition: background 0.5s ease;
     z-index: 1;
+    animation: fadeIn 1s ease forwards;
 }
 
 .body_main {
@@ -38,6 +39,9 @@ body::before {
     font-size: 70px;
     font-weight: 400;
     margin: 0;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideInFromTop 1.5s ease forwards 0.5s;
 }
 
 .subtext_main {
@@ -47,6 +51,9 @@ body::before {
     font-size: 80px;
     font-weight: 600;
     margin-top: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideInFromBottom 1.5s ease forwards 1s;
 }
 
 .subtext_main span {
@@ -130,4 +137,19 @@ body::before {
         display: flex;
         flex-direction: column;
     }
+}
+
+@keyframes slideInFromTop {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInFromBottom {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleUp {
+    0% { opacity: 0; transform: scale(0); }
+    100% { opacity: 1; transform: scale(1); }
 }

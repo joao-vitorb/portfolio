@@ -24,6 +24,7 @@
     font-size: 5rem;
     font-weight: bold;
     margin: 0;
+    animation: fadeInSlideUp 1s ease-out forwards;
 }
 
 .hero-content .highlight {
@@ -35,6 +36,7 @@
     height: 2px;
     background-color: white; 
     border: none;
+    animation: fadeInSlideLeft 2s ease-out forwards;
 }
 
 .line-left {
@@ -549,5 +551,38 @@ body::before {
     .footer {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInSlideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInSlideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
