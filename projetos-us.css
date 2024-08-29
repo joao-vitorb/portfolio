@@ -180,6 +180,14 @@
     transition: all 0.2s;
 }
 
+#icon-react {
+    transition: all 0.2s;
+}
+
+#icon-node {
+    transition: all 0.2s;
+}
+
 #icon-html:hover {
     color: orangered;
 }
@@ -192,18 +200,27 @@
     color: yellow;
 }
 
+#icon-react:hover {
+    color: rgb(0, 255, 183);
+}
+
+#icon-node:hover {
+    color: rgb(22, 216, 51);
+}
+
 .end-btn {
     background-color: var(--fundo-main);
     display: flex;
     justify-content: center;
     padding-bottom: 8rem;
+    gap: 1rem;
 }
 
 .port-btn-end {
     background-color: var(--roxo-letra);
     color: white;
-    border: none;
-    padding: 10px 20px;
+    border: 2px solid var(--roxo-letra);
+    padding: 10px 60px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -214,11 +231,40 @@
     transition: all 0.3s;
 }
 
+#btn-vejamais {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+#btn-vejamais:hover {
+    background-color: var(--roxo-letra);
+    color: white;
+    border: 2px solid var(--roxo-letra);
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
 .port-btn-end:hover {
     background-color: var(--roxo-botao);
     color: white;
-    border: none;
-    padding: 10px 20px;
+    border: 2px solid var(--roxo-botao);
+    padding: 10px 60px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
