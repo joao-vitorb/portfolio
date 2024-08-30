@@ -2,12 +2,12 @@
 .button-container {
     position: fixed;
     bottom: 25px;
-    left: 50%;
+    left: 50%; 
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 2;
+    z-index: 2; 
 }
 
 .plus-button {
@@ -22,11 +22,6 @@
     cursor: pointer;
     font-size: 25px;
     z-index: 3;
-    position: relative;
-    overflow: hidden;
-    opacity: 0;
-    transform: scale(0);
-    animation: scaleUp 1.5s ease forwards 1.5s;
 }
 
 .plus-button i {
@@ -83,6 +78,7 @@
     width: 35px;
     height: 25px;
     padding: 0.5rem;
+    border: none;
 }
 
 #flag-br {
