@@ -1,0 +1,124 @@
+.button-container {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.plus-button {
+  width: 50px;
+  height: 50px;
+  background-color: var(--branco);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 25px;
+  z-index: 3;
+  transition: transform 0.3s ease;
+}
+
+.plus-button:hover {
+  transform: scale(1.1);
+}
+
+.plus-button i {
+  color: var(--preto);
+}
+
+.options {
+  display: none;
+  position: absolute;
+  bottom: 100px;
+  flex-direction: column;
+  align-items: center;
+  gap: 55px;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.show-options {
+  opacity: 1;
+  transform: translateY(0);
+  display: flex;
+}
+
+.option {
+  width: 250px;
+  height: 50px;
+  border: 2px solid var(--branco);
+  border-radius: 100px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, border-color 0.35s ease;
+}
+
+.option:hover {
+  background-color: var(--roxo-botao);
+  border-color: var(--roxo-botao);
+}
+
+.rotate-icon {
+  transition: transform 0.35s ease;
+  transform: rotate(45deg);
+}
+
+.rotate-icon-reverse {
+  transition: transform 0.35s ease;
+  transform: rotate(0deg);
+}
+
+.flag-img {
+  width: 35px;
+  height: 25px;
+  padding: 0.5rem;
+  border: none;
+}
+
+#flag-br {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  background-color: rgb(209, 209, 209);
+}
+
+#flag-us {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: rgb(249, 248, 248);
+  transition: 0.3s all;
+}
+
+#flag-us:hover {
+  background-color: #032753;
+  width: 40px;
+  height: 30px;
+}
+
+#options-top {
+  color: var(--branco);
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-wrap: wrap;
+  max-width: 200px;
+  text-align: center;
+  margin-bottom: -1.5rem;
+  border: none;
+}
+
+#options-top:hover {
+  background-color: transparent;
+}

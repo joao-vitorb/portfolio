@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --roxo-botao: #6d0791;
+  --roxo-letra: #a00bd4;
+  --branco: #ffffff;
+  --preto: #000000;
+  --fundo-main: #010208;
+  --fundo-dois: #080c15;
+  --cinza-footer: #212121;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--roxo-botao)0;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--roxo-letra);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}

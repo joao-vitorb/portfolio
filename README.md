@@ -31,5 +31,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ por João Vitor Borges :wave:# portfolio
-# portfolio
+Feito com ♥ por João Vitor Borges :wave:

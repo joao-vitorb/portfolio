@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: #333;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+}
+
+.construction-image {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 100px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  transition: all 0.5s;
+}
+
+.social-icons a:hover {
+  background-color: aquamarine;
+}
