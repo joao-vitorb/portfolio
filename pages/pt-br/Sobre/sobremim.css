@@ -68,7 +68,6 @@
   }
 }
 
-/*SOBRE MIM*/
 .about-container {
   display: flex;
   padding: 3rem 20rem;
@@ -259,7 +258,6 @@
   }
 }
 
-/*HARD SKILLS*/
 .hard-container {
   background-color: var(--fundo-dois);
   margin-top: -2rem;

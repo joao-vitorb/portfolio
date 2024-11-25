@@ -22,8 +22,6 @@
   transition: all 0.2s;
 }
 
-/* hover */
-
 #icon-html:hover {
   color: orangered;
 }
