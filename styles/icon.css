@@ -1,0 +1,47 @@
+#icon-html {
+  transition: all 0.2s;
+}
+
+#icon-css {
+  transition: all 0.2s;
+}
+
+#icon-js {
+  transition: all 0.2s;
+}
+
+#icon-react {
+  transition: all 0.2s;
+}
+
+#icon-node {
+  transition: all 0.2s;
+}
+
+#icon-wordpress {
+  transition: all 0.2s;
+}
+
+#icon-html:hover {
+  color: orangered;
+}
+
+#icon-css:hover {
+  color: rgb(0, 132, 255);
+}
+
+#icon-js:hover {
+  color: yellow;
+}
+
+#icon-react:hover {
+  color: rgb(0, 255, 183);
+}
+
+#icon-node:hover {
+  color: rgb(22, 216, 51);
+}
+
+#icon-wordpress:hover {
+  color: rgb(0, 225, 255);
+}
