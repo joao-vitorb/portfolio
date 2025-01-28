@@ -325,6 +325,14 @@ hr {
   transform: translateX(50%);
 }
 
+#icon-python {
+  transform: translateX(-25%);
+}
+
+#icon-java {
+  transform: translateX(25%);
+}
+
 @media (max-width: 1200px) {
   .hard-container {
     padding: 0 5rem;
@@ -380,7 +388,7 @@ hr {
   }
 
   .icon-row i {
-    font-size: 50px;
+    font-size: 60px;
     margin: 10px;
   }
 
@@ -393,6 +401,10 @@ hr {
 @media (max-width: 620px) {
   .hard-text {
     margin: 0 1rem;
+  }
+
+  .icon-row i {
+    font-size: 50px;
   }
 }
 
