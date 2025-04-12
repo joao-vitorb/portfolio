@@ -22,6 +22,7 @@
   font-size: 25px;
   z-index: 3;
   transition: transform 0.3s ease;
+  animation: pulse 2s infinite;
 }
 
 .plus-button:hover {
@@ -121,4 +122,19 @@
 
 #options-top:hover {
   background-color: transparent;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
 }
